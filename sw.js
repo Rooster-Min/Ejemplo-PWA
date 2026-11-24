@@ -112,7 +112,7 @@ self.addEventListener('fetch', evento =>{
         })
         .catch(err => {
     if(evento.request.headers.get('accept').includes('text/html')){
-        return caches.match('/pages/Offline.html');
+        return caches.match('/pages/offline.html');
 }
 
 });
