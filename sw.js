@@ -30,6 +30,7 @@ self.addEventListener('install', evento=>{
                 './pages/offline.html'
             ]);
         });
+    });
 self.addEventListener('activate', evento =>{
     const respuesta=caches.keys().then(keys =>{
         keys.forEach(key =>{
@@ -48,7 +49,7 @@ self.addEventListener('activate', evento =>{
        
             //Indicamos que la instalación espere hasta que las promesas se cumplan
         evento.waitUntil(Promise.all([cacheBase, cacheInmutable]));
-});
+
 
 
 /******************* FUNCIÓN DE LIMPIEZA DE CACHE ********************
