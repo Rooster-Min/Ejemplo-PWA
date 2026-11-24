@@ -1,6 +1,3 @@
-
-/* Archivos necesarios para cargar la aplicación sin conexión */
-
 // CONSTANTES DE ALMACENAMIENTO CACHE
 const CACHE = 'cache-3';
 const CACHE_DINAMICO = 'dinamico-1';
